@@ -1,0 +1,6 @@
+# Ignore Python virtual environment and compiled Python files
+venv/
+__pycache__/
+
+# Ignore node_modules for JavaScript projects
+node_modules/
