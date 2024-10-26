@@ -1,10 +1,10 @@
-from algorithms.first_fit import first_fit
-from algorithms.first_fit_decreasing import first_fit_decreasing
-from algorithms.best_fit import best_fit
-from algorithms.best_fit_decreasing import best_fit_decreasing
-from algorithms.worst_fit import worst_fit
-from algorithms.worst_fit_decreasing import worst_fit_decreasing
-from algorithms.next_fit import next_fit
+from py_algorithms.first_fit import first_fit
+from py_algorithms.first_fit_decreasing import first_fit_decreasing
+from py_algorithms.best_fit import best_fit
+from py_algorithms.best_fit_decreasing import best_fit_decreasing
+from py_algorithms.worst_fit import worst_fit
+from py_algorithms.worst_fit_decreasing import worst_fit_decreasing
+from py_algorithms.next_fit import next_fit
 
 def calculate_cut_list(available, required):
     algorithms = [
