@@ -1,4 +1,3 @@
-#main.py
 from algorithms.first_fit import first_fit
 from algorithms.first_fit_decreasing import first_fit_decreasing
 from algorithms.best_fit import best_fit
@@ -22,15 +21,3 @@ def calculate_cut_list(available, required):
     
     best_result = min(results, key=lambda res: res['waste'])
     return best_result['cut_list'], best_result['waste'], best_result['stock_used']
-
-# Example usage
-available_stock = ["1@4.8", "1@2.7"]
-required_cuts = ["1@2.7", "2@1.8"]
-
-cut_list, total_waste, stock_used = calculate_cut_list(available_stock, required_cuts)
-
-print("Cut List:")
-for cut in cut_list:
-    print(cut)
-print(f"\nTotal waste: {total_waste:.2f}m")
-print(f"Total stock pieces used: {stock_used}")
